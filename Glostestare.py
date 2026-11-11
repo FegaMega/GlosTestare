@@ -15,11 +15,11 @@ words = [
 	{ "English" : ["slip"], "Swedish" : ["remsa"]},
 	{ "English" : ["accountant"], "Swedish" : ["revisor"]},
 	{ "English" : ["adjacent"], "Swedish" : ["angränsande"]},
-	{ "English" : ["sample"], "Swedish" : ["prov / prova"]},
+	{ "English" : ["sample"], "Swedish" : ["prov", "prova"]},
 	{ "English" : ["attach"], "Swedish" : ["fästa"]},
 	{ "English" : ["switch"], "Swedish" : ["strömbrytare"]},
 	{ "English" : ["wrist"], "Swedish" : ["handled"]},
-	{ "English" : ["label"], "Swedish" : ["märke, sätta etiket på"]},
+	{ "English" : ["label"], "Swedish" : ["märke", "sätta etiket på"]},
 	{ "English" : ["participant"], "Swedish" : ["deltagare"]},
 	{ "English" : ["comply with"], "Swedish" : ["lyda"]},
 	{ "English" : ["request"], "Swedish" : ["begäran"]},
@@ -40,7 +40,7 @@ words = [
 	{ "English" : ["penetrate"], "Swedish" : ["tränga in i"]},
 	{ "English" : ["diverse"], "Swedish" : ["mångfaldig"]},
 	{ "English" : ["deception"], "Swedish" : ["bedrägeri"]},
-	{ "English" : ["survey"], "Swedish" : ["undersöka / undersökning"]},
+	{ "English" : ["survey"], "Swedish" : ["undersöka", "undersökning"]},
 	{ "English" : ["regret"], "Swedish" : ["ångra"]},
 	{ "English" : ["volunteer"], "Swedish" : ["frivillig"]},
 	{ "English" : ["conclude"], "Swedish" : ["komma fram till"]},
@@ -132,6 +132,25 @@ def formatHintWord(answers):
 def checkAnswer(answer : str, alternatives:list):
 	return answer in alternatives
 
+def findDifferncesStrStr(answer:str, correctAnswer: str) -> str:
+	string = ""
+	for i in range(correctAnswer.__len__()):
+		if i < answer.__len__() and answer[i] == correctAnswer[i]:
+			string += "\33[32m"
+		else:
+			string += "\33[31m"
+		string += correctAnswer[i]
+	string += "\33[0m"			
+	return string
+
+def findDifferncesStrList(answer:str, correctAnswers: list) -> str:
+	string = ""
+	for i in range(len(correctAnswers)-1):
+		string += findDifferncesStrStr(answer, correctAnswers[i]) + ", "
+
+	string += findDifferncesStrStr(answer, correctAnswers[len(correctAnswers)-1])
+	return string
+
 while len(words) > 0:
 
 	i = random.randint(0, len(words)-1)
@@ -146,10 +165,12 @@ while len(words) > 0:
 		answer = askForTranslation("Swedish : "+ hintWord + " ; English : ")
 	
 		if answer == words[i]["English"][0]:
-			print ("Correct")
+			dif = findDifferncesStrList(answer, words[i]["English"])
+			print ("Correct!")
 			words.pop(i)
 		else:
-			print("Incorrect : " + words[i]["English"][0])
+			dif = findDifferncesStrList(answer, words[i]["English"])
+			print("Incorrect : " + dif)
 
 	else:
 		answer = input("English : " + words[i].english + " ; Swedish : ").rstrip()
