@@ -74,7 +74,52 @@ words = [
 	{ "English" : ["capture"], "Swedish" : ["fånga"]},
 ]
 
+<<<<<<< Updated upstream
 
+=======
+words = [
+	{ "English" : ["battered"], "Swedish" : ["illa tilltygad"]},
+	{ "English" : ["resort to"], "Swedish" : ["ta till", "hemfalla åt"]},
+	{ "English" : ["preoccupied with"], "Swedish" : ["helt upptagen av"]},
+	{ "English" : ["stroll"], "Swedish" : ["promenera", "vandra"]},
+	{ "English" : ["lavish"], "Swedish" : ["överdådig", "påkostad"]},
+	{ "English" : ["blister"], "Swedish" : ["blåsa"]},
+	{ "English" : ["tend"], "Swedish" : ["vårda", "sköta"]},
+	{ "English" : ["solemn"], "Swedish" : ["högtidlig"]},
+	{ "English" : ["right on target"], "Swedish" : ["rakt på sak"]},
+	{ "English" : ["delicate"], "Swedish" : ["ömtålig", "känslig"]},
+	{ "English" : ["mutual"], "Swedish" : ["ömsesidig"]},
+	{ "English" : ["stagger"], "Swedish" : ["vackla"]},
+	{ "English" : ["startle"], "Swedish" : ["skrämma", "överraska"]},
+	{ "English" : ["peasant"], "Swedish" : ["boende"]},
+	{ "English" : ["mountain range"], "Swedish" : ["bergskedja"]},
+	{ "English" : ["humble"], "Swedish" : ["ödmjuk"]},
+	{ "English" : ["hesitating"], "Swedish" : ["tvekande"]},
+	{ "English" : ["wreckage"], "Swedish" : ["vrakspillor"]},
+	{ "English" : ["injury"], "Swedish" : ["(kroppslig) skada"]},
+	{ "English" : ["exposure"], "Swedish" : ["förfrysning"]},
+	{ "English" : ["extensive"], "Swedish" : ["omfattande"]},
+	{ "English" : ["corpse"], "Swedish" : ["lik"]},
+	{ "English" : ["calculate"], "Swedish" : ["räkna ut"]},
+	{ "English" : ["supervise"], "Swedish" : ["övervaka", "granska"]},
+	{ "English" : ["select"], "Swedish" : ["välja ut"]},
+	{ "English" : ["grief"], "Swedish" : ["sorg"]},
+	{ "English" : ["grisly"], "Swedish" : ["gräslig", "ohygglig"]},
+	{ "English" : ["limb"], "Swedish" : ["lem", "arm", "ben"]},
+	{ "English" : ["encourage"], "Swedish" : ["uppmuntra"]},
+	{ "English" : ["attend"], "Swedish" : ["delta i"]},
+	{ "English" : ["gaze"], "Swedish" : ["blick", "stirrande"]},
+	{ "English" : ["anniversary"], "Swedish" : ["årsdag"]},
+	{ "English" : ["vigorous"], "Swedish" : ["kraftfull"]},
+	{ "English" : ["assure"], "Swedish" : ["försäkra"]},
+	{ "English" : ["worm"], "Swedish" : ["mask"]},
+	{ "English" : ["communion"], "Swedish" : ["gemenskap", "nattvard"]},
+	{ "English" : ["spirit"], "Swedish" : ["humör", "sinnessstämming", "energi", "gnista"]},
+	{ "English" : ["sacrifice"], "Swedish" : ["offer"]},
+	{ "English" : ["score"], "Swedish" : ["göra mål"]},
+	{ "English" : ["estate"], "Swedish" : ["gods", "(lant)egendom"]},
+]
+>>>>>>> Stashed changes
 
 sw = []
 weirdWords = []
