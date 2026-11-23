@@ -74,10 +74,7 @@ wordsWeek46 = [
 	{ "English" : ["capture"], "Swedish" : ["fånga"]},
 ]
 
-<<<<<<< Updated upstream
-
-=======
-words = [
+wordsWeek47 = [
 	{ "English" : ["battered"], "Swedish" : ["illa tilltygad"]},
 	{ "English" : ["resort to"], "Swedish" : ["ta till", "hemfalla åt"]},
 	{ "English" : ["preoccupied with"], "Swedish" : ["helt upptagen av"]},
@@ -119,7 +116,34 @@ words = [
 	{ "English" : ["score"], "Swedish" : ["göra mål"]},
 	{ "English" : ["estate"], "Swedish" : ["gods", "(lant)egendom"]},
 ]
->>>>>>> Stashed changes
+
+words = [
+	{ "English" : ["alter"], "Swedish" : ["ändra"]},
+	{ "English" : ["gene-editing"], "Swedish" : ["redigering av gener", "förbättring av gener"]},
+	{ "English" : ["the mainstream"], "Swedish" : ["det normala", "det accepterade"]},
+	{ "English" : ["confined to"], "Swedish" : ["begränsad till"]},
+	{ "English" : ["edit"], "Swedish" : ["redigera", "bättra på"]},
+	{ "English" : ["lecture"], "Swedish" : ["föreläsning"]},
+	{ "English" : ["genetic engineering"], "Swedish" : ["genetisk ingenjörskonst"]},
+	{ "English" : ["tinker"], "Swedish" : ["pilla", "mixtra"]},
+	{ "English" : ["reckless"], "Swedish" : ["vårdslös", "lättsinnig"]},
+	{ "English" : ["genome"], "Swedish" : ["genuppsättning"]},
+	{ "English" : ["tissue"], "Swedish" : ["vävnad"]},
+	{ "English" : ["consensus"], "Swedish" : ["samsyn", "allmän mening"]},
+	{ "English" : ["alteration"], "Swedish" : ["ändring"]},
+	{ "English" : ["inhibit"], "Swedish" : ["hämma"]},
+	{ "English" : ["disability"], "Swedish" : ["handikapp", "rörelsehinder", "funktionsvariation"]},
+	{ "English" : ["extend"], "Swedish" : ["sträcka sig"]},
+	{ "English" : ["enhance"], "Swedish" : ["stegra", "stärka", "förbättra"]},
+	{ "English" : ["sense"], "Swedish" : ["sinne"]},
+	{ "English" : ["limb"], "Swedish" : ["lem", "arm", "ben"]},
+	{ "English" : ["competitive sport"], "Swedish" : ["tävlingssport"]},
+	{ "English" : ["detect"], "Swedish" : ["upptäcka"]},
+	{ "English" : ["be conflicted by"], "Swedish" : ["stå i strid med", "stå i konflikt med"]},
+	{ "English" : ["monitor"], "Swedish" : ["övervaka", "kontrollera"]},
+	{ "English" : ["crackdown on"], "Swedish" : ["hårdare kontroll av", "tillslag mot"]},
+]
+
 
 sw = []
 weirdWords = []
